@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Additional global styles */
+@layer base {
+  html {
+    @apply antialiased;
+    font-family: theme('fontFamily.sans');
+    background-color: theme('colors.background');
+  }
+
+  body {
+    @apply text-white bg-gray-900 dark:bg-background transition-colors;
+  }
+
+  a {
+    @apply text-blue-500 hover:underline;
+  }
+}
