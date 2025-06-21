@@ -1,12 +1,13 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import path from 'path';
 
 export default defineConfig({
-  base: '/rabex-ui/', // <--- Important for GitHub Pages!
+  base: '/rabex-ui/', // ✅ required for GitHub Pages
   plugins: [react()],
   resolve: {
     alias: {
-      '@': '/src',
+      '@': path.resolve(__dirname, 'src'), // ✅ correct path aliasing
     },
   },
 });
