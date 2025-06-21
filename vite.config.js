@@ -1,14 +1,13 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import path from 'path'; // ✅ Import path module
+import path from 'path';
 
 export default defineConfig({
-  base: '/rabex-ui/', // ✅ Required for GitHub Pages
+  base: '/rabex-ui/',
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'), // ✅ Correctly resolve '@'
+      '@': path.resolve(__dirname, 'src'), // ✅ essential
     },
   },
 });
-
