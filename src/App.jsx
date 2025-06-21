@@ -1,6 +1,5 @@
-// src/App.jsx
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
+import { BrowserRouter, HashRouter, Routes, Route, NavLink } from "react-router-dom";
 import Home from "@/components/Home";
 import Dashboard from "@/components/Dashboard";
 import WalletPanel from "@/components/WalletPanel";
@@ -11,6 +10,7 @@ import { useWallet } from "@/context/WalletProvider";
 export default function App() {
   const { address, connectWallet } = useWallet();
 
+  // Define your nav links
   const navLinks = [
     { to: "/", label: "Home" },
     { to: "/dashboard", label: "Dashboard" },
@@ -21,6 +21,9 @@ export default function App() {
     { to: "/raaspay", label: "Raaspay" },
   ];
 
+  // Choose router based on environment: HashRouter in production (GitHub Pages), BrowserRouter in dev
+  const Router = process.env.NODE_ENV === "production" ? HashRouter : BrowserRouter;
+
   return (
     <Router>
       <div className="min-h-screen flex flex-col bg-black text-white font-sans">
@@ -29,7 +32,7 @@ export default function App() {
           <div className="max-w-7xl mx-auto w-full px-6 py-6 flex items-center justify-between">
             <h1 className="text-2xl font-extrabold tracking-wide text-yellow-500">RABEX UI</h1>
 
-            <nav className="flex gap-10 text-white text-lg font-medium">
+            <nav className="flex gap-6 text-sm sm:text-base font-medium">
               {navLinks.map(({ to, label }) => (
                 <NavLink
                   key={to}
