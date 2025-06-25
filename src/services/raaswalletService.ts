@@ -10,3 +10,5 @@ export const isWalletRegistered = async (address: string): Promise<boolean> => {
   const contract = getRaaswalletContract();
   return await contract.isRegistered(address);
 };
+
+

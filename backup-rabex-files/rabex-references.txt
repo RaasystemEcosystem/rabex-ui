@@ -1,0 +1,35 @@
+--- FILE NAMES CONTAINING 'raaspay' ---
+C:\Users\hp\Raasystem\raaspay-ui\src\components\raaspay.jsx
+C:\Users\hp\Raasystem\raaspay-ui\src\components\raaspayStatus.jsx
+C:\Users\hp\Raasystem\raaspay-ui\src\components\raaspayTradingPanel.jsx
+C:\Users\hp\Raasystem\raaspay-ui\src\components\useraaspayAIEngineContract.js
+C:\Users\hp\Raasystem\raaspay-ui\src\lib\raaspay-contract.ts
+C:\Users\hp\Raasystem\raaspay-ui\src\services\raaspayService.ts
+C:\Users\hp\Raasystem\raaspay-ui\raaspay-references.txt
+
+--- FILES CONTAINING 'raaspay' IN CONTENT ---
+C:\Users\hp\Raasystem\raaspay-ui\index.html
+C:\Users\hp\Raasystem\raaspay-ui\raaspay-references.txt
+C:\Users\hp\Raasystem\raaspay-ui\src\abis\copyAbis.js
+C:\Users\hp\Raasystem\raaspay-ui\src\abis\index.ts
+C:\Users\hp\Raasystem\raaspay-ui\src\components\DashboardMain.jsx
+C:\Users\hp\Raasystem\raaspay-ui\src\components\layout.jsx
+C:\Users\hp\Raasystem\raaspay-ui\src\components\raaspay.jsx
+C:\Users\hp\Raasystem\raaspay-ui\src\components\raaspayStatus.jsx
+C:\Users\hp\Raasystem\raaspay-ui\src\components\raaspayTradingPanel.jsx
+C:\Users\hp\Raasystem\raaspay-ui\src\components\Sidebar.jsx
+C:\Users\hp\Raasystem\raaspay-ui\src\components\TopBar.jsx
+C:\Users\hp\Raasystem\raaspay-ui\src\components\useraaspayAIEngineContract.js
+C:\Users\hp\Raasystem\raaspay-ui\src\lib\contractAPI.ts
+C:\Users\hp\Raasystem\raaspay-ui\src\lib\env.ts
+C:\Users\hp\Raasystem\raaspay-ui\src\lib\raaspay-contract.ts
+C:\Users\hp\Raasystem\raaspay-ui\src\metadata\raasystem_contracts_developer_doc.json
+C:\Users\hp\Raasystem\raaspay-ui\src\modules\admin\AdminPanel.jsx
+C:\Users\hp\Raasystem\raaspay-ui\src\modules\trading\Dashboard.jsx
+C:\Users\hp\Raasystem\raaspay-ui\src\pages\Dashboard.tsx
+C:\Users\hp\Raasystem\raaspay-ui\src\services\index.ts
+C:\Users\hp\Raasystem\raaspay-ui\src\services\raaspayService.ts
+C:\Users\hp\Raasystem\raaspay-ui\src\utils\contractAPI.ts
+C:\Users\hp\Raasystem\raaspay-ui\src\utils\interactContracts.ts
+
+

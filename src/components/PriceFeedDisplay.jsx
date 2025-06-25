@@ -39,3 +39,5 @@ const PriceChart = ({ priceHistory }) => {
 
 export default PriceChart;
 
+
+

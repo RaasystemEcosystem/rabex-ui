@@ -6,7 +6,7 @@ import { ethers } from 'ethers';
 import {
   getRaaskoinContract,
   getRaastokenContract,
-  getRabexContract,
+  getraaspayContract,
   getRaaspayContract,
   getGoldPriceOracleContract,
 } from '@/lib/contractAPI';
@@ -28,14 +28,14 @@ const getRaastokenTotalSupply = async () => {
   console.log(`Total Raastoken supply: ${ethers.utils.formatUnits(supply, 18)}`);
 };
 
-// ---- Rabex Example ----
-const getRabexOrderBookDepth = async () => {
-  const contract = getRabexContract();
+// ---- raaspay Example ----
+const getraaspayOrderBookDepth = async () => {
+  const contract = getraaspayContract();
   try {
     const depth = await contract.getOrderBookDepth(); // Confirm method exists in ABI
-    console.log(`Rabex Order Book Depth: ${depth}`);
+    console.log(`raaspay Order Book Depth: ${depth}`);
   } catch (err) {
-    console.error('Rabex order book depth error:', err);
+    console.error('raaspay order book depth error:', err);
   }
 };
 
@@ -57,8 +57,11 @@ const getCurrentGoldPrice = async () => {
 (async () => {
   await getRaaskoinBalance(userAddress);
   await getRaastokenTotalSupply();
-  await getRabexOrderBookDepth();
+  await getraaspayOrderBookDepth();
   await getMerchantBalance(userAddress);
   await getCurrentGoldPrice();
 })();
+
+
+
 

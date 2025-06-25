@@ -49,3 +49,5 @@ const PriceChart = ({ priceHistory = [], labels = [] }) => {
     scales: {
       x: {
         ticks: { color: '#d1d5db' }, // gr
+
+

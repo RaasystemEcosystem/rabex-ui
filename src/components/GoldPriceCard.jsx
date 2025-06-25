@@ -34,3 +34,5 @@ export default function GoldPriceCard({ goldPrice, loading, error, onRefresh }: 
     </div>
   );
 }
+
+

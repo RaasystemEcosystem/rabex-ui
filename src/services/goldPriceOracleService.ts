@@ -10,3 +10,5 @@ export const fetchGoldPrice = async (): Promise<string> => {
     throw error;
   }
 };
+
+

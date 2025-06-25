@@ -68,3 +68,5 @@ TokenForm.propTypes = {
   initialSymbol: PropTypes.string,
   actionLabel: PropTypes.string,
 };
+
+

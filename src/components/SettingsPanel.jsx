@@ -22,3 +22,5 @@ const SettingsPanel = ({ theme, toggleTheme }) => {
 };
 
 export default SettingsPanel;
+
+

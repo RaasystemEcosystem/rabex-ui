@@ -4,3 +4,5 @@ export const isMerchantRegistered = async (merchantAddress: string): Promise<boo
   const contract = getRaaspayContract();
   return await contract.isMerchant(merchantAddress);
 };
+
+

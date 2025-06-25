@@ -48,3 +48,5 @@ export default function useGoldPrice(pollInterval = 30000) {
 
   return { goldPrice, loading, error, refresh: () => fetchGoldPrice() };
 }
+
+

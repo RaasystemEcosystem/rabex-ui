@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom';
 
 const links = [
   { to: '/', label: 'Home' },
-  { to: '/dashboard', label: 'Dashboard' },
-  { to: '/wallet', label: 'Wallet' },
-  { to: '/trade', label: 'Trade' },
+  { to: '/raaspay', label: 'Raaspay' },
+  { to: '/transactions', label: 'Transactions' },
+  { to: '/docs', label: 'Docs' },
 ];
 
 export default function Navbar() {
@@ -18,7 +18,7 @@ export default function Navbar() {
           to={to}
           end={to === '/'}
           className={({ isActive }) =>
-            `text-white hover:text-yellow-400 font-medium ${isActive ? 'text-yellow-400 border-b-2 border-yellow-400' : ''}`
+            text-white hover:text-yellow-400 font-medium ${isActive ? 'text-yellow-400 border-b-2 border-yellow-400' : ''}
           }
         >
           {label}
@@ -27,3 +27,5 @@ export default function Navbar() {
     </nav>
   );
 }
+
+

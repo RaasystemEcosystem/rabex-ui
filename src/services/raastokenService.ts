@@ -12,3 +12,5 @@ export const fetchRaastokenBalance = async (address: string): Promise<string> =>
   const balance = await contract.balanceOf(address);
   return ethers.utils.formatUnits(balance, 18);
 };
+
+

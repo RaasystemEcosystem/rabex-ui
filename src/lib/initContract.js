@@ -16,3 +16,5 @@ export const initContract = async () => {
 
   return { provider, signer, contract, walletAddress };
 };
+
+

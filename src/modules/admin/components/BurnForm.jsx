@@ -38,3 +38,5 @@ export default function BurnForm({ contract, onSuccess }) {
     </Card>
   );
 }
+
+

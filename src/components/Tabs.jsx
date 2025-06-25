@@ -39,3 +39,5 @@ Tabs.propTypes = {
   children: PropTypes.node.isRequired,
   defaultIndex: PropTypes.number,
 };
+
+

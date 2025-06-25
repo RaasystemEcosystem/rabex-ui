@@ -55,3 +55,5 @@ const QuickTrade = () => {
 };
 
 export default QuickTrade;
+
+

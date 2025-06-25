@@ -3,14 +3,14 @@ import { ethers } from 'ethers';
 // ABI Imports (Ensure these paths match your frontend structure)
 import RaaskoinABI from '@/abi/Raaskoin.json';
 import RaastokenABI from '@/abi/Raastoken.json';
-import RabexABI from '@/abi/Rabex.json';
+import raaspayABI from '@/abi/raaspay.json';
 import RaaspayABI from '@/abi/Raaspay.json';
 import GoldPriceOracleABI from '@/abi/GoldPriceOracle.json';
 
 // Contract addresses from .env or hardcoded (replace these if loading from backend)
 const RAASKOIN_ADDRESS = import.meta.env.VITE_RAASKOIN_ADDRESS!;
 const RAASTOKEN_ADDRESS = import.meta.env.VITE_RAASTOKEN_ADDRESS!;
-const RABEX_ADDRESS = import.meta.env.VITE_RABEX_ADDRESS!;
+const raaspay_ADDRESS = import.meta.env.VITE_raaspay_ADDRESS!;
 const RAASPAY_ADDRESS = import.meta.env.VITE_RAASPAY_ADDRESS!;
 const GOLDPRICEORACLE_ADDRESS = import.meta.env.VITE_GOLDPRICEORACLE_ADDRESS!;
 
@@ -42,8 +42,8 @@ export const getRaastokenContract = async () => {
   return await loadContract(RAASTOKEN_ADDRESS, RaastokenABI);
 };
 
-export const getRabexContract = async () => {
-  return await loadContract(RABEX_ADDRESS, RabexABI);
+export const getraaspayContract = async () => {
+  return await loadContract(raaspay_ADDRESS, raaspayABI);
 };
 
 export const getRaaspayContract = async () => {
@@ -53,3 +53,6 @@ export const getRaaspayContract = async () => {
 export const getGoldPriceOracleContract = async () => {
   return await loadContract(GOLDPRICEORACLE_ADDRESS, GoldPriceOracleABI);
 };
+
+
+

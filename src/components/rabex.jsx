@@ -1,4 +1,4 @@
-// src/pages/rabex.js
+// src/pages/raaspay.js
 "use client";
 
 import { useEffect, useState } from "react";
@@ -8,10 +8,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-const RABEX_ADDRESS = "0x9445E9B6C5696B10a7326ebF4765732aE79F81d2";
-const RABEX_ABI = [ /* ABI pasted here */ ];
+const raaspay_ADDRESS = "0x9445E9B6C5696B10a7326ebF4765732aE79F81d2";
+const raaspay_ABI = [ /* ABI pasted here */ ];
 
-export default function RabexPage() {
+export default function raaspayPage() {
   const [provider, setProvider] = useState(null);
   const [signer, setSigner] = useState(null);
   const [contract, setContract] = useState(null);
@@ -37,7 +37,7 @@ export default function RabexPage() {
   const connectWallet = async () => {
     const accounts = await window.ethereum.request({ method: "eth_requestAccounts" });
     const signerInstance = provider.getSigner();
-    const contractInstance = new ethers.Contract(RABEX_ADDRESS, RABEX_ABI, signerInstance);
+    const contractInstance = new ethers.Contract(raaspay_ADDRESS, raaspay_ABI, signerInstance);
 
     setSigner(signerInstance);
     setAccount(accounts[0]);
@@ -73,7 +73,7 @@ export default function RabexPage() {
 
   return (
     <div className="p-4 max-w-3xl mx-auto space-y-6">
-      <h1 className="text-2xl font-bold">RABEX Token Dashboard</h1>
+      <h1 className="text-2xl font-bold">raaspay Token Dashboard</h1>
 
       {!account ? (
         <Button onClick={connectWallet}>Connect Wallet</Button>
@@ -142,3 +142,6 @@ export default function RabexPage() {
     </div>
   );
 }
+
+
+

@@ -21,7 +21,7 @@ const menuItems = [
 export default function Sidebar() {
   return (
     <aside className="w-60 bg-gray-900 text-white min-h-screen p-6 shadow-md">
-      <h2 className="text-2xl font-bold text-yellow-400 mb-8">📊 RABEX</h2>
+      <h2 className="text-2xl font-bold text-yellow-400 mb-8">📊 raaspay</h2>
       <ul className="space-y-4">
         {menuItems.map(({ name, path, icon }) => (
           <li key={name}>
@@ -44,3 +44,6 @@ export default function Sidebar() {
     </aside>
   );
 }
+
+
+

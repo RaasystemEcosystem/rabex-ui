@@ -59,3 +59,5 @@ TransferCard.propTypes = {
   setTransferData: PropTypes.func.isRequired,
   handleTransfer: PropTypes.func.isRequired,
 };
+
+

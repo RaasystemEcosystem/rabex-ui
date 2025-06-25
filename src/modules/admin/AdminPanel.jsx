@@ -51,7 +51,7 @@ export default function AdminPanel() {
 
   return (
     <main className="min-h-screen bg-gray-50 py-10 px-4 md:px-20">
-      <h1 className="text-3xl font-bold mb-8 text-center">RABEX Admin Panel</h1>
+      <h1 className="text-3xl font-bold mb-8 text-center">raaspay Admin Panel</h1>
 
       {/* Connect Wallet */}
       <Card className="mb-6">
@@ -85,3 +85,6 @@ export default function AdminPanel() {
     </main>
   );
 }
+
+
+

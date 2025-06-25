@@ -8,7 +8,7 @@ export default function DashboardMain({ goldPrice }) {
     <div className="bg-black text-white font-sans min-h-screen p-8">
       {/* Header */}
       <header className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-yellow-400">📈 RABEX Trading Dashboard</h1>
+        <h1 className="text-4xl font-bold text-yellow-400">📈 raaspay Trading Dashboard</h1>
         <p className="text-gray-300 mt-2">AI-powered crypto & asset trading on XDC</p>
         <p className="mt-2 text-lg">
           Current Gold Price:{' '}
@@ -47,3 +47,6 @@ export default function DashboardMain({ goldPrice }) {
     </div>
   );
 }
+
+
+

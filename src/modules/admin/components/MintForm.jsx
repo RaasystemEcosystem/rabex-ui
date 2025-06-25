@@ -38,3 +38,5 @@ export default function MintForm({ contract, walletAddress, onSuccess }) {
     </Card>
   );
 }
+
+

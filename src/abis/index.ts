@@ -5,7 +5,7 @@ dotenv.config();
 import {
   getRaaskoinInstance,
   getRaastokenInstance,
-  getRabexInstance,
+  getraaspayInstance,
   getRaaspayInstance,
   getGoldPriceOracleInstance,
   getRaaswalletInstance,
@@ -14,8 +14,11 @@ import {
 export {
   getRaaskoinInstance,
   getRaastokenInstance,
-  getRabexInstance,
+  getraaspayInstance,
   getRaaspayInstance,
   getGoldPriceOracleInstance,
   getRaaswalletInstance,
 };
+
+
+

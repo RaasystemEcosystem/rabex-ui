@@ -23,7 +23,7 @@
       }
     ]
   },
-  "Rabex": {
+  "raaspay": {
     "interface_summary": "AI-driven decentralized exchange handling order books, spreads, and liquidity management.",
     "abi": [
       {
@@ -72,3 +72,5 @@
     ]
   }
 }
+
+

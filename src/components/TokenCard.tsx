@@ -102,3 +102,5 @@ TokenCard.propTypes = {
   priceHistory: PropTypes.arrayOf(PropTypes.number).isRequired,
   animationDelay: PropTypes.number,
 };
+
+

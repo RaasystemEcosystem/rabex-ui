@@ -33,3 +33,5 @@ Badge.propTypes = {
   color: PropTypes.oneOf(['yellow', 'green', 'red', 'blue', 'gray']),
   className: PropTypes.string,
 };
+
+

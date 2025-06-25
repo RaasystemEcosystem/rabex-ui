@@ -5,7 +5,7 @@ const path = require("path");
 const contracts = [
   "Raaskoin",
   "Raastoken",
-  "Rabex",
+  "raaspay",
   "Raaswallet",
   "Raaspay",
   "GoldPriceOracle"
@@ -30,3 +30,6 @@ contracts.forEach((contract) => {
     console.warn(`⚠️ ABI for ${contract} not found in build/contracts.`);
   }
 });
+
+
+

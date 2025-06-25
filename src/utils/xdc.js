@@ -16,3 +16,5 @@ export async function fetchGoldPrice() {
   const raw = await contract.getLatestPrice();
   return ethers.formatUnits(raw, 2); // Adjust decimals if your oracle uses more
 }
+
+

@@ -23,3 +23,5 @@ export const useLiveChartData = (initialData = [10, 12, 9, 14, 13], intervalMs =
 
   return { data, labels };
 };
+
+

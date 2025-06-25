@@ -38,7 +38,7 @@ export default function Dashboard() {
     <div className="bg-gray-900 min-h-screen text-white">
       <Navbar />
       <div className="p-6">
-        <h1 className="text-3xl font-bold mb-6">Rabex Trading Dashboard</h1>
+        <h1 className="text-3xl font-bold mb-6">raaspay Trading Dashboard</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           <div className="bg-gray-800 p-4 rounded-lg">
@@ -75,3 +75,6 @@ export default function Dashboard() {
     </div>
   );
 }
+
+
+

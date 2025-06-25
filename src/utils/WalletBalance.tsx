@@ -6,3 +6,5 @@ const showBalance = async () => {
   const balance = await fetchRaaskoinBalance(userAddress);
   console.log(`Balance: ${balance}`);
 };
+
+

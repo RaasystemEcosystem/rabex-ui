@@ -90,3 +90,5 @@ export default function WalletModalContent({ onClose }: WalletModalContentProps)
     </div>
   );
 }
+
+

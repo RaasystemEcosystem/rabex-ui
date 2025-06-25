@@ -34,3 +34,5 @@ export const useRaaskoin = () => {
 
   return { walletAddress, balance, tokenName, provider, contract, decimals, connectWallet };
 };
+
+

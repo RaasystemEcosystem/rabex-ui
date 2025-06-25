@@ -11,7 +11,7 @@ export default function Layout() {
     <div className="min-h-screen bg-black text-white font-sans flex flex-col">
       {/* Header */}
       <header className="bg-gray-900 px-6 py-4 flex justify-between items-center border-b border-gray-700">
-        <h1 className="text-2xl font-bold text-yellow-400">RABEX UI</h1>
+        <h1 className="text-2xl font-bold text-yellow-400">raaspay UI</h1>
         <div>
           {address ? (
             <span className="text-sm font-mono text-yellow-400">
@@ -40,3 +40,6 @@ export default function Layout() {
     </div>
   );
 }
+
+
+

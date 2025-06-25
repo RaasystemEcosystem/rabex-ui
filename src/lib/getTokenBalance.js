@@ -13,3 +13,5 @@ export const getTokenBalance = async (contract, walletAddress) => {
     balance: ethers.utils.formatUnits(rawBalance, decimals)
   };
 };
+
+

@@ -38,3 +38,5 @@ export default function useTradingPair(initialPair = 'RAK/XDC') {
 
   return { tradingPair, setTradingPair, orderBook, loading, price, priceHistory };
 }
+
+
