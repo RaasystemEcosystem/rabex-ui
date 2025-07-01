@@ -6,11 +6,11 @@ import WalletPanel from "@/components/WalletPanel";
 import TradePanel from "@/components/TradePanel";
 import ActiveTrades from "@/components/ActiveTrades";
 import { useWallet } from "@/context/WalletProvider";
+import RaaspayPage from "@/pages/raaspay";  // ✅ import real Raaspay page
 
 export default function App() {
   const { address, connectWallet } = useWallet();
 
-  // Define your nav links
   const navLinks = [
     { to: "/", label: "Home" },
     { to: "/dashboard", label: "Dashboard" },
@@ -21,7 +21,7 @@ export default function App() {
     { to: "/raaspay", label: "Raaspay" },
   ];
 
-  // Choose router based on environment: HashRouter in production (GitHub Pages), BrowserRouter in dev
+  // Use HashRouter in production (GitHub Pages), BrowserRouter in dev
   const Router = process.env.NODE_ENV === "production" ? HashRouter : BrowserRouter;
 
   return (
@@ -81,10 +81,7 @@ export default function App() {
                 path="/raaswallet"
                 element={<div className="text-center text-yellow-400">Raaswallet Coming Soon</div>}
               />
-              <Route
-                path="/raaspay"
-                element={<div className="text-center text-yellow-400">Raaspay Coming Soon</div>}
-              />
+              <Route path="/raaspay" element={<RaaspayPage />} /> {/* ✅ real Raaspay */}
             </Routes>
           </div>
         </main>

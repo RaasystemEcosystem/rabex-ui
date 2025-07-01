@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://raasystemecosystem.github.io/rabex-ui",
+  "homepage": "https://raasystemecosystem.github.io/raaspay-ui",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -60,3 +60,4 @@
     ]
   }
 }
+
