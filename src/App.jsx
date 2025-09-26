@@ -1,3 +1,4 @@
+// src/App.jsx
 import React from "react";
 import { BrowserRouter, HashRouter, Routes, Route, NavLink } from "react-router-dom";
 import Home from "@/components/Home";
@@ -5,8 +6,9 @@ import Dashboard from "@/components/Dashboard";
 import WalletPanel from "@/components/WalletPanel";
 import TradePanel from "@/components/TradePanel";
 import ActiveTrades from "@/components/ActiveTrades";
+import Raaswallet from "@/components/Raaswallet";
+import RaaspayPage from "@/pages/raaspay";
 import { useWallet } from "@/context/WalletProvider";
-import RaaspayPage from "@/pages/raaspay";  // ✅ import real Raaspay page
 
 export default function App() {
   const { address, connectWallet } = useWallet();
@@ -30,7 +32,9 @@ export default function App() {
         {/* Header */}
         <header className="border-b border-gray-800 bg-black z-10">
           <div className="max-w-7xl mx-auto w-full px-6 py-6 flex items-center justify-between">
-            <h1 className="text-2xl font-extrabold tracking-wide text-yellow-500">RABEX UI</h1>
+            <h1 className="text-2xl font-extrabold tracking-wide text-yellow-500">
+              Rabex AI-Exchange
+            </h1>
 
             <nav className="flex gap-6 text-sm sm:text-base font-medium">
               {navLinks.map(({ to, label }) => (
@@ -77,11 +81,8 @@ export default function App() {
               <Route path="/wallet" element={<WalletPanel />} />
               <Route path="/trade" element={<TradePanel />} />
               <Route path="/activetrades" element={<ActiveTrades />} />
-              <Route
-                path="/raaswallet"
-                element={<div className="text-center text-yellow-400">Raaswallet Coming Soon</div>}
-              />
-              <Route path="/raaspay" element={<RaaspayPage />} /> {/* ✅ real Raaspay */}
+              <Route path="/raaswallet" element={<Raaswallet />} /> {/* ✅ interactive Raaswallet */}
+              <Route path="/raaspay" element={<RaaspayPage />} />   {/* ✅ real Raaspay */}
             </Routes>
           </div>
         </main>
